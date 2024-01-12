@@ -113,7 +113,7 @@ html {
 }
 .inicio .contenedor-banner button {
   cursor: pointer;
-  background-color: transparent;
+  background-color:ghostwhite;
   border: 2px solid #fff;
   width: fit-content;
   display: block;
