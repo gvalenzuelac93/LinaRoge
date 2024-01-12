@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;500&family=Work+Sans:wght@100;300;400;600;800&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* Permite deslizar cuando se hace click en los links del menu*/
+  scroll-behavior: smooth;
+}
+/*MENU*/
+.contenedor-header {
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.contenedor-header header .logo {
+  font-family: "Righteous";
+  font-size: 36px;
+  color: #1cb698;
+  text-decoration: none;
+}
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
+}
+.contenedor-header header ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.contenedor-header header ul li a:hover {
+  color: #1cb698;
+}
+.nav-responsive {
+  background-color: #1cb698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+/*SECCION INICIO*/
+
+.inicio {
+  background: linear-gradient(to top, #1e232699, rgba(30, 35, 38, 1)),
+    url(../img/fondo1.jpg);
+  background-size: cover;
+  height: 125vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.inicio .contenedor-banner {
+  position: relative;
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 400px;
+  top: 35px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 30px;
+  opacity: 1;
+}
+.inicio .contenedor-banner img {
+  margin-top: 40px;
+  border: 10px solid #1cb698;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 50%;
+  padding: 5px;
+}
+.inicio .contenedor-banner h1 {
+  margin-top: 40px;
+  font-size: 32px;
+  font-family: "Righteous";
+}
+.inicio .contenedor-banner h2 {
+  margin-top: 40px;
+  font-size: 15px;
+  font-family: "Righteous";
+}
+.inicio .contenedor-banner .redes {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  border: 1 px solid #fff;
+  border-radius: 100%;
+  line-height: 42px;
+  margin: 40px;
+  font-size: 20px;
+  transition: 3s;
+}
+.inicio .contenedor-banner .redes a:hover {
+  background-color: #1cb698;
+}
+.inicio .contenedor-banner button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px;
+  padding: 10px 22px;
+  font-size: 16px;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  left: 30px;
+}
+
+.inicio .contenedor-banner button:hover {
+  background-color: #1cb698;
+}
+.sobremi {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 30px;
+  text-align: justify;
+
+  opacity: 1;
+}
+.sobremi .contenido-seccion {
+  max-width: 800px;
+  margin: auto;
+}
+.sobremi h2 {
+  font-size: 48px;
+  font-family: "righteous";
+  text-align: center;
+  color: #1cb698;
+}
+.sobremi .contenido-seccion {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span {
+  color: #1cb698;
+  font-weight: bold;
+}
+
+.fila {
+  display: flex;
+  text-align: justify;
+}
+.fila .col {
+  width: 400px;
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+  margin: 20px;
+  border-radius: 30px;
+  display: flex;
+}
+.fila .col h3 {
+  font-size: 28px;
+  font-family: "righteous";
+  margin-bottom: 25px;
+  color: #1cb698;
+}
+
+.contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+  width: 330px;
+  background-color: #1e2326;
+  color: #fff;
+  margin: 20px;
+  border-radius: 30px;
+}
+.contenedor-intereses h3 {
+  justify-content: center;
+  position: relative;
+  font-size: 28px;
+  font-family: "righteous";
+  margin-bottom: 25px;
+  width: 150px;
+  height: 25px;
+  top: auto;
+  padding: 50px 20px;
+}
+.contenedor-intereses .intereses {
+  width: 100px;
+  height: 100px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  padding: auto;
+  margin: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 3s;
+}
+
+.contenedor-intereses .intereses i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.contenedor-intereses .intereses:hover {
+  background-color: #1cb698;
+}
+.row {
+  justify-content: space-around;
+  text-align: justify;
+  color: #fff;
+}
+
+.container h2 {
+  color: #1cb698;
+}
+
+.container {
+  background: linear-gradient(to top, #1e232699, rgba(30, 35, 38, 1));
+  color: #fff;
+  border-radius: 30px;
+  border: 4px solid#1cb698;
+}
+/*SECCION PORTAFOLIO*/
+.portafolio {
+  max-width: 1100px;
+  padding: 20px 0;
+  margin: auto;
+}
+.portafolio h1 {
+  color: #1cb698;
+  position: relative;
+  font-size: 28px;
+  font-family: "righteous";
+}
+.portafolio .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #1e2326;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+.filas {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.proyecto {
+  max-width: 50%;
+  border: 4px solid#1cb698;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.proyecto img {
+  position: relative;
+  top: 2px;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  object-fit: cover;
+  transition: 5s;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.proyecto:hover img {
+  filter: grayscale(0);
+}
+
+.filas .proyecto .info {
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #1cb698;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  bottom: -40px;
+  transition: 0.5s;
+}
+.portafolio .filas .proyecto:hover .info {
+  opacity: 1;
+  bottom: 0;
+}
+footer {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  color: #1cb698;
+  height: 150px;
+  margin: 0%;
+
+  background-color: #252a2e;
+}
+
+footer p {
+  position: relative;
+  top: 20px;
+  color: white;
+  margin: 0%;
+  opacity: 1;
+}
+footer a {
+  text-decoration: none;
+  display: inline-block;
+
+  color: white;
+  margin: 1px;
+  font-size: 26px;
+}
+.redes a {
+  text-decoration: none;
+  display: inline-block;
+
+  color: white;
+  margin: 2px;
+  font-size: 26px;
+}
+/*SECCION RESPONSITIVE*/
+@media screen and (max-width: 800px) {
+  .redes {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
